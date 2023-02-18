@@ -65,27 +65,29 @@
 /* hero */
 
 .aboutMe {
-    background-color: #588157;
-    height: auto;
+background-color: #588157;
 display: flex;
+border: solid 5px blue;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 }
 
 .aboutMe h1{
-    font-size: 38px;
-    font-weight: bold;
+font-size: 28px;
+font-weight: bold;
 display: block;
 text-align: center;
+border: solid 5px yellow;
 }
 
 .aboutMe span{
     display: block;
+    border: solid 5px firebrick;
 }
 .aboutMe img {
 width:100%;
-
+border: solid 5px tomato;
 max-width: 200px;
 height: auto;
 border-radius: 50%;
@@ -96,5 +98,26 @@ margin:20px 0px;
 .aboutMe p {
     text-align: center;
     margin: 20px;
-    font-size: 24px;
+    font-size: 18px;
+    border: 5px solid purple;
+}
+
+@media screen and (min-width:1000px){
+    .profile-img{
+        align-self: flex-start;
+        height: auto;
+        width: auto;
+    }
+    .profile-img img {
+        align-self:flex-start;
+        height: 85%;
+        width: 400px;
+        max-width: 400px;
+        margin-left: 2%;
+    }
+
+    .aboutMe h1{
+        font-size: 42px;
+    }
+
 }
