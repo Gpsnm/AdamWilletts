@@ -7,7 +7,7 @@
 
 /* navbar Styles */
 .navBar {
-  background-color: #000;
+  background-color: #588157;
   overflow: hidden;
 }
 
@@ -22,13 +22,8 @@
 }
 
 .navBar a:hover {
-  background-color: #fff;
+  background-color: #dad7cd;
   color: black;
-}
-
-.navBar a:active {
-  background-color: #04aa6d;
-  color: white;
 }
 
 .navBar .icon {
@@ -46,7 +41,6 @@
   }
 }
 /* To style the drop down menu for when hamburger appears below 600px*/
-
 @media screen and (max-width: 600px) {
   .navBar.responsive {
     position: relative;
