@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* navbar Styles */
+.navBar {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.navBar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navBar a:hover {
+  background-color: #fff;
+  color: black;
+}
+
+.navBar a:active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.navBar .icon {
+  display: none;
+}
+
+/* navbar media queries to hide all links except first-child and to show the hamburger icon  */
+@media screen and (max-width: 600px) {
+  .navBar a:not(:first-child) {
+    display: none;
+  }
+  .navBar a.icon {
+    float: right;
+    display: block;
+  }
+}
+/* To style the drop down menu for when hamburger appears below 600px*/
+
+@media screen and (max-width: 600px) {
+  .navBar.responsive {
+    position: relative;
+  }
+  .navBar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
