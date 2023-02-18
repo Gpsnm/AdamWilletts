@@ -66,6 +66,7 @@
 
 .aboutMe {
     background-color: #588157;
+    height: auto;
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -73,7 +74,8 @@ align-items: center;
 }
 
 .aboutMe h1{
-    font-size: 28px;
+    font-size: 38px;
+    font-weight: bold;
 display: block;
 text-align: center;
 }
@@ -88,4 +90,11 @@ max-width: 200px;
 height: auto;
 border-radius: 50%;
 object-fit: fill;
+margin:20px 0px;
+}
+
+.aboutMe p {
+    text-align: center;
+    margin: 20px;
+    font-size: 24px;
 }
