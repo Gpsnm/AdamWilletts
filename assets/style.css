@@ -67,7 +67,6 @@
 .aboutMe {
 background-color: #588157;
 display: flex;
-/* border: solid 5px blue; */
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -79,16 +78,14 @@ font-size: 28px;
 font-weight: bold;
 display: block;
 text-align: center;
-/* border: solid 5px yellow; */
 }
 
 .aboutMe span{
     display: block;
-    /* border: solid 5px firebrick; */
+
 }
 .aboutMe img {
 width:100%;
-/* border: solid 5px tomato; */
 max-width: 200px;
 height: auto;
 border-radius: 50%;
@@ -101,7 +98,6 @@ margin:20px 0px;
     text-align: center;
     margin: 20px;
     font-size: 18px;
-    /* border: 5px solid purple; */
 }
 
 @media screen and (min-width:1000px){
@@ -168,7 +164,6 @@ margin:20px 0px;
 /* contact me */
 
 footer {
-    border: solid 5px red;
     display: flex;
     flex-direction: column;
     align-items: center;
