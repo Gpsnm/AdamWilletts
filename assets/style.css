@@ -159,3 +159,29 @@ margin:20px 0px;
     max-width: 100%;
     max-height: 100%;
 }
+
+.projects h2:hover{
+    text-decoration: underline;
+}
+
+
+/* contact me */
+
+footer {
+    border: solid 5px red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    background-color: #588157;
+    color: #fff;
+}
+
+footer h2{
+    margin:2% 0;
+}
+footer a {
+    color: #fff;
+    font-size: 30px;
+    margin-left: 1vw;
+}
