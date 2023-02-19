@@ -2,8 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-
 
 /* navbar Styles */
 .navBar {
@@ -18,11 +18,11 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 40px;
 }
 
-.push{
-    margin-right:auto;
+.push {
+  margin-right: auto;
 }
 
 .navBar a:hover {
@@ -43,6 +43,9 @@
     float: right;
     display: block;
   }
+  .navBar a {
+    font-size: 18px;
+  }
 }
 /* To style the drop down menu for when hamburger appears below 600px*/
 @media screen and (max-width: 600px) {
@@ -61,127 +64,147 @@
   }
 }
 
-
 /* hero */
 
 .aboutMe {
-background-color: #588157;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  background-color: #588157;
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.aboutMe h1{
-    color: #fff;
-font-size: 28px;
-font-weight: bold;
-display: block;
-text-align: center;
+.aboutMe h1 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+  text-align: center;
 }
 
-.aboutMe span{
-    display: block;
-
+.aboutMe span {
+  display: block;
 }
 .aboutMe img {
-width:100%;
-max-width: 200px;
-height: auto;
-border-radius: 50%;
-object-fit: fill;
-margin:20px 0px;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: fill;
+  margin: 20px 0px;
 }
 
 .aboutMe p {
-    color: #fff;
-    text-align: center;
-    margin: 20px;
-    font-size: 18px;
+  color: #fff;
+  text-align: center;
+  margin: 20px;
+  font-size: 18px;
 }
 
-@media screen and (min-width:1000px){
-    .profile-img{
-        align-self: flex-start;
-        height: auto;
-        width: auto;
-    }
-    .profile-img img {
-        align-self:flex-start;
-        height: 85%;
-        width: 400px;
-        max-width: 400px;
-        margin-left: 2%;
-    }
-
-    .aboutMe h1{
-        font-size: 42px;
-    }
-
-}
 /* projects */
 
-.projects{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #344e41;
-    height: auto;
-    width: auto;
+.projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #344e41;
+  height: auto;
+  width: auto;
 }
 
-.projects div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    width: 80%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+.projects div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 80%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
-
 
 .projects h2 {
-    color: #fff;
-    font-size: 28px;
-    margin-top: 2%;
+  color: #fff;
+  font-size: 28px;
+  margin-top: 2%;
 }
 .projects p {
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
-margin: 0 2%;
-
-
-}
-.projects img{
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
-    margin-top: 4%;
-  }
-
-.projects h2:hover{
-    text-decoration: underline;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 2%;
 }
 
+.projects a {
+  text-decoration: none;
+}
+
+.projects img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 4%;
+}
+
+.projects h2:hover {
+  text-decoration: underline;
+}
 
 /* contact me */
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    background-color: #588157;
-    color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  background-color: #588157;
+  color: #fff;
 }
 
-footer h2{
-    margin:2% 0;
+footer h2 {
+  margin: 2% 0;
 }
 footer a {
-    color: #fff;
-    font-size: 30px;
-    margin-left: 1vw;
+  color: #fff;
+  font-size: 30px;
+  margin-left: 1vw;
+}
+
+/* media for desktop */
+@media screen and (min-width: 1000px) {
+  .aboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .aboutMe h1 {
+    font-size: 5em;
+  }
+
+  .aboutMe p {
+    font-size: 2em;
+  }
+
+  .aboutMe img {
+    height: auto;
+    width: 600px;
+    max-width: 600px;
+  }
+  .about-me-text {
+    width: 50%;
+  }
+
+  .projects h2{
+    font-size: 4em;
+  }
+  .projects p {
+    font-size: 2em;
+  }
+footer{
+  height: auto;
+  font-size: 2em;
+}
+footer a  {
+  font-size: 2em;
+}
 }

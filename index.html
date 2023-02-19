@@ -15,29 +15,34 @@
   </head>
   <body>
     <nav class="navBar">
-      <a href="#">Projects</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
+      <a href="https://github.com/Gpsnm" target="_blank">Adam Willetts</a>
+      <a href="#about-me">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#footer">Contact</a>
       <a href="javascript:void(0)" class="icon" onclick="responsive()"
         ><i class="fa fa-bars"></i
       ></a>
     </nav>
     <main>
-      <section class="aboutMe">
+      <section class="aboutMe" id="about-me">
         <img
           src="./assets/images/profile picture.jpg"
           alt="photo of adam smiling"
         />
-        <h1>Hi , I am Adam <span>an aspiring Junior Developer</span></h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic vel ipsa
-          corrupti! Repellat excepturi molestias laudantium odit nisi beatae
-          sit, delectus hic tempore assumenda asperiores illo amet optio
-          aspernatur omnis.
-        </p>
+        <div class="about-me-text">
+          <h1>Hi , I am Adam <span>an aspiring Junior Developer</span></h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic vel
+            ipsa corrupti! Repellat excepturi molestias laudantium odit nisi
+            beatae sit, delectus hic tempore assumenda asperiores illo amet
+            optio aspernatur omnis.
+          </p>
+        </div>
       </section>
-      <section class="projects">
-        <h2>iRecipe</h2>
+      <section class="projects" id="projects">
+        <a href="https://github.com/samueltuki/iRecipe" target="_blank"
+          ><h2>iRecipe</h2></a
+        >
         <div>
           <a href="https://github.com/samueltuki/iRecipe" target="_blank"
             ><img
@@ -52,7 +57,9 @@
           ducimus voluptatem neque quidem?
         </p>
         <div>
-          <h2>5 Day Work Planner</h2>
+          <a href="https://github.com/Gpsnm/WorkDayPlanner"
+            ><h2>5 Day Work Planner</h2></a
+          >
           <a href="https://github.com/Gpsnm/WorkDayPlanner"
             ><img
               src="./assets/images/gpsnm.github.io_WorkDayPlanner_.png"
@@ -67,8 +74,8 @@
         </div>
       </section>
     </main>
-    <footer>
-      <h2>Please get in touch!</h2>
+    <footer id="footer">
+      <h2>Contact me!</h2>
       <div class="contact">
         <a href="mailto:adam-willetts@hotmail.co.uk"
           ><i class="fa-thin fa fa-envelope"></i
