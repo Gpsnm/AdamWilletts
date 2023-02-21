@@ -47,6 +47,10 @@
   .navBar a {
     font-size: 18px;
   }
+  .projects div{
+    display: flex;
+    flex-direction: column;
+  }
 }
 /* To style the drop down menu for when hamburger appears below 600px*/
 @media screen and (max-width: 600px) {
@@ -116,40 +120,30 @@
 
 .projects div {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  height: auto;
-  width: 80%;
+  justify-content: center;
+  max-height: 80%;
+  width: 100%;
   margin-top: 2%;
   margin-bottom: 2%;
 }
 
 .projects h2 {
   color: #fff;
-  font-size: 28px;
+  font-size: 36px;
   margin-top: 2%;
-}
-.projects p {
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  margin: 0 2%;
-}
-
-.projects a {
-  text-decoration: none;
 }
 
 .projects img {
-  object-fit: contain;
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 60%;
+  max-height: 60%;
+
   margin-top: 4%;
+  border-radius: 20px;
+  border: solid 3px #588157;
+  cursor: pointer;
 }
 
-.projects h2:hover {
-  text-decoration: underline;
-}
 
 /* contact me */
 
@@ -163,12 +157,12 @@ footer {
 }
 
 footer h2 {
+  font-size: 28px;
   margin: 2% 0;
 }
 footer a {
   color: #fff;
-  font-size: 30px;
-  margin-left: 1vw;
+  font-size: 2em;
 }
 
 /* media for desktop */
@@ -185,7 +179,7 @@ footer a {
   .aboutMe p {
     font-size: 2em;
   }
- .aboutMe h1:hover {
+.aboutMe h1:hover {
       background-color: #344e41;
       color: #588157;
     }
@@ -201,12 +195,12 @@ footer a {
   .about-me-text {
     width: 50%;
   }
-}
   .projects h2{
     font-size: 4em;
   }
-  .projects p {
-    font-size: 2em;
+  .projects h2:hover {
+    background-color: #588157;
+    color: #344e41;
   }
 footer{
   height: auto;
@@ -221,4 +215,9 @@ footer a:hover{
 footer h2 {
   margin-top: 0;
   margin-bottom: 0;
+}
+footer h2:hover{
+  background-color: #344e41;
+  color: #588157;
+}
 }
