@@ -114,7 +114,7 @@
   flex-direction: column;
   align-items: center;
   background-color: #344e41;
-  height: auto;
+  height: 100%;
   width: auto;
 }
 
@@ -122,10 +122,27 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  max-height: 80%;
+  height: 100%;
   width: 100%;
   margin-top: 2%;
   margin-bottom: 2%;
+}
+.modal-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+  z-index: 9999;
+  height: 100%;
+  width: 100%;
+  border: solid 5px hotpink;
+
+}
+.modal{
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 .projects h2 {
