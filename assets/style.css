@@ -27,8 +27,8 @@
 }
 
 .navBar a:hover {
-  background-color:#344e41;
-  color:#588157;
+  background-color: #344e41;
+  color: #588157;
 }
 
 .navBar .icon {
@@ -47,7 +47,7 @@
   .navBar a {
     font-size: 18px;
   }
-  .projects div{
+  .projects div {
     display: flex;
     flex-direction: column;
   }
@@ -108,109 +108,47 @@
 }
 
 /* projects */
-
 .projects {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   background-color: #344e41;
-  height: 100%;
   width: auto;
+  height: auto;
 }
 
-.projects div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
+.projects h2 {
+  align-self: center;
   margin-top: 2%;
-  margin-bottom: 2%;
-}
-.modal-container{
-  background-color: #344e41;
-  display: flex;
-  position:static;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100%;
-
-}
-.modal{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  max-height: 100%;
-  height: 80%;
-  min-width: 90%;
-  width: 90%; 
+  font-size: 28px;
 }
 
-.modal-content button {
-  margin-top: 10%;
-  background-color: #344e41;
-border-radius: 20%;
-
-
-}
-
-.modal-content button:hover {
-  background:#588157;
-  text-decoration: none;
-  color:#344e41;
-}
-
-.close-btn{
-  margin-top: 10%;
-  font-size:22px;
-  padding: 0 20px;
-}
-
-
-
-.hide{
-  display: none;
-}
-.modal-content{
-  background-color:#588157;
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 90%;
-  width: 95%;
-overflow: hidden;
-}
-
-.modal-links a {
-  font-size: 26px;
-  margin: 20px;
+.project-one button{
+  font-size: 18px;
   text-decoration: none;
   color: black;
+  align-self: center;
 }
-.modal-content p{
-  text-align: center;
-  font-size:24px;
-}
-.projects h2 {
-  color: #fff;
-  font-size: 36px;
-  margin-top: 2%;
-}
-
-.projects img {
-  max-width: 60%;
-  max-height: 60%;
-
-  margin-top: 4%;
-  border-radius: 20px;
-  border: solid 3px #588157;
-  cursor: pointer;
+.project-one{
+  height:auto;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
 }
 
+.project-two {
+  height: auto;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
 
+.work-content{
+  align-items: center;
+
+}
 /* contact me */
 
 footer {
@@ -245,14 +183,14 @@ footer a {
   .aboutMe p {
     font-size: 2em;
   }
-.aboutMe h1:hover {
-      background-color: #344e41;
-      color: #588157;
-    }
-    .aboutMe p:hover{
-      background-color: #344e41;
-      color: #588157;
-    }
+  .aboutMe h1:hover {
+    background-color: #344e41;
+    color: #588157;
+  }
+  .aboutMe p:hover {
+    background-color: #344e41;
+    color: #588157;
+  }
   .aboutMe img {
     height: auto;
     width: 600px;
@@ -261,35 +199,30 @@ footer a {
   .about-me-text {
     width: 50%;
   }
-  .projects h2{
+  .projects h2 {
     font-size: 4em;
   }
   .projects h2:hover {
     background-color: #588157;
     color: #344e41;
   }
-footer{
-  height: auto;
-  font-size: 2em;
+  footer {
+    height: auto;
+    font-size: 2em;
+  }
+  footer a {
+    font-size: 2em;
+  }
+  footer a:hover {
+    color: #344e41;
+  }
+  footer h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  footer h2:hover {
+    background-color: #344e41;
+    color: #588157;
+  }
 }
-footer a  {
-  font-size: 2em;
-}
-footer a:hover{
-  color: #344e41;
-}
-footer h2 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-footer h2:hover{
-  background-color: #344e41;
-  color: #588157;
-}
-.modal-content h2 {
-  font-size: 60px;
-}
-.modal-content p {
-  font-size: 42px;
-}
-}
+
