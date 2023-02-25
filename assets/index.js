@@ -9,3 +9,8 @@ function responsive() {
     navBar.className = "navBar";
   }
 }
+
+
+// module 
+
+const modal = document.querySelector(".modal-container");
