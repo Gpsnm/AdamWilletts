@@ -11,6 +11,20 @@ function responsive() {
 }
 
 
-// module 
+// modal 
 
-const modal = document.querySelector(".modal-container");
+
+
+function showModal(){
+  const modal = document.querySelector(".modal-container");
+const projects = document.querySelector(".projects");
+const closeBtn = document.querySelector(".close-btn");
+if (modal.classList.contains("hide")){
+  modal.classList.remove("hide")
+  projects.classList.add("hide");
+  closeBtn.addEventListener("click", function(){
+    modal.classList.add("hide")
+    projects.classList.remove("hide");
+  })
+  
+}};
