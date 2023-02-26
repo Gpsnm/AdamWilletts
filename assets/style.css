@@ -47,10 +47,6 @@
   .navBar a {
     font-size: 18px;
   }
-  .projects div {
-    display: flex;
-    flex-direction: column;
-  }
 }
 /* To style the drop down menu for when hamburger appears below 600px*/
 @media screen and (max-width: 600px) {
@@ -118,37 +114,48 @@
 }
 
 .projects h2 {
-  align-self: center;
   margin-top: 2%;
-  font-size: 28px;
-}
+  color: #fff;
 
-.project-one button{
-  font-size: 18px;
-  text-decoration: none;
-  color: black;
-  align-self: center;
 }
-.project-one{
-  height:auto;
-  width: 75%;
+.project-container{
   display: flex;
   flex-direction: column;
-  margin-bottom: 2%;
-}
-
-.project-two {
-  height: auto;
-  width: 75%;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2%;
-}
-
-.work-content{
   align-items: center;
-
+  margin-top: 5%;
 }
+
+.project-text{
+  display: flex;
+  margin:5% 0%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.container-btn{
+  margin:5% 0%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+    display: block;
+    flex-direction: column;
+}
+
+button{
+  padding: 0.5em 5em;
+  background-color: #588157;
+  border: solid 0px #344e41;
+}
+button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  text-align: center;
+}
+
+
 /* contact me */
 
 footer {
